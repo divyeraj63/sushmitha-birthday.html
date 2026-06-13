@@ -5,194 +5,139 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Mummy ❤️</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background: linear-gradient(to bottom, #000000, #1a1a2e);
+color:white;
+overflow-x:hidden;
+text-align:center;
+}
+
+/* Floating hearts & flowers */
+.heart, .flower {
+position: fixed;
+bottom: -20px;
+font-size: 20px;
+animation: floatUp linear infinite;
+opacity: 0.7;
+}
+
+@keyframes floatUp {
+0% { transform: translateY(0); opacity: 0; }
+50% { opacity: 1; }
+100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+header{
+padding:30px;
+font-size:28px;
+font-weight:bold;
+color:#ff4d6d;
+}
+
+h2{
+margin-top:10px;
+color:#fff;
+font-weight:normal;
+}
+
+.gallery{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+gap:10px;
+padding:20px;
+}
+
+.gallery img{
+width:100%;
+height:140px;
+object-fit:cover;
+border-radius:10px;
+border:2px solid #fff;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+.message{
+padding:20px;
+font-size:18px;
+line-height:1.6;
+}
+
+audio{
+margin:20px;
+width:90%;
+}
+</style>
 </head>
 
 <body>
 
-<div id="loader">
-<h1>Loading Memories ❤️</h1>
-</div>
-
-<div id="progress"></div>
-
-<div class="stars"></div>
-
-<!-- LOGIN PAGE -->
-
-<div class="page active" id="login">
-
-<h1>🌸 Happy Birthday Mummy 🌸</h1>
-
-<p>Enter the Secret Password</p>
-
-<input id="password" type="password">
-
-<button onclick="checkPass()">
-🎂 Start Birthday Journey
-</button>
-
-<br><br>
-
-<button onclick="appreciate()">
-🌹 Why You're Special
-</button>
-
-</div>
-
-<!-- SLIDE 1 -->
-
-<div class="page" id="slide1">
-
-<h1 id="typing"></h1>
-
-<p>
-Happy Birthday Mummy ❤️
-
-Today is all about celebrating
-the most loving and caring person
-in my life.
-</p>
-
-</div>
-
-<!-- SLIDE 2 -->
-
-<div class="page" id="slide2">
-
-<img src="IMG-20240512-WA0039.jpg">
-
-<p>
-A beautiful memory ❤️
-</p>
-
-</div>
-
-<!-- SLIDE 3 -->
-
-<div class="page" id="slide3">
-
-<img src="IMG-20240512-WA0046.jpg">
-
-<p>
-Thank you for always supporting me 🌸
-</p>
-
-</div>
-
-<!-- SLIDE 4 -->
-
-<div class="page" id="slide4">
-
-<img src="IMG-20240623-WA0000.jpg">
-
-<p>
-Your smile brightens every day ❤️
-</p>
-
-</div>
-
-<!-- SLIDE 5 -->
-
-<div class="page" id="slide5">
-
-<img src="IMG-20250224-WA0033.jpg">
-
-<p>
-You taught me kindness and strength 🌹
-</p>
-
-</div>
-
-<!-- SLIDE 6 -->
-
-<div class="page" id="slide6">
-
-<img src="IMG-20250401-WA0007.jpg">
-
-<p>
-Every memory with you is precious ❤️
-</p>
-
-</div>
-
-<!-- SLIDE 7 -->
-
-<div class="page" id="slide7">
-
-<img src="IMG-20251127-WA0004.jpg">
-
-<p>
-Thank you for every sacrifice 🌸
-</p>
-
-</div>
-
-<!-- SLIDE 8 -->
-
-<div class="page" id="slide8">
-
-<img src="IMG_20190909_183422_Bokeh.jpg">
-
-<p>
-Your love has always guided me ❤️
-</p>
-
-</div>
-
-<!-- SLIDE 9 -->
-
-<div class="page" id="slide9">
-
-<img src="IMG_20191130_161908.jpg">
-
-<p>
-The best mother anyone could ask for 🌹
-</p>
-
-</div>
-
-<!-- SLIDE 10 -->
-
-<div class="page" id="slide10">
-
-<img src="IMG_20200928_163255.jpg">
-
-<p>
-Happy Birthday Mummy ❤️
-</p>
-
-</div>
-
-<!-- SLIDE 11 -->
-
-<div class="page" id="slide11">
-
-<img src="IMG_20201025_143549.jpg">
-
-<p>
-Forever grateful for you 🌸
-</p>
-
-</div>
-
-<!-- SLIDE 12 -->
-
-<div class="page" id="slide12">
-
-<img src="IMG_20220210_160235.jpg">
-
-<p>
-Love You Mummy ❤️
-</p>
-
-</div>
-
-<audio id="bgmusic" loop>
-<source src="song.mp3" type="audio/mpeg">
+<header>
+🎉 Happy Birthday <br> <span style="color:white;">Sushmitha (Mummy) ❤️</span>
+</header>
+
+<h2>You are the heart of our family 💖</h2>
+
+<!-- Music -->
+<audio controls autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+  Your browser does not support audio.
 </audio>
 
-<script src="script.js"></script>
+<!-- Message -->
+<div class="message">
+Happy Birthday Mummy ❤️<br><br>
+You are the most beautiful blessing in our life.  
+May your smile always shine brighter than stars ✨  
+We love you endlessly 💖  
+</div>
+
+<!-- Photo Gallery (11 photos) -->
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+<img src="photo7.jpg">
+<img src="photo8.jpg">
+<img src="photo9.jpg">
+<img src="photo10.jpg">
+<img src="photo11.jpg">
+</div>
+
+<script>
+// Floating hearts and flowers generator
+function createFloating() {
+  const el = document.createElement("div");
+  el.classList.add(Math.random() > 0.5 ? "heart" : "flower");
+  el.innerHTML = Math.random() > 0.5 ? "❤️" : "🌸";
+
+  el.style.left = Math.random() * 100 + "vw";
+  el.style.animationDuration = (3 + Math.random() * 5) + "s";
+  el.style.fontSize = (15 + Math.random() * 25) + "px";
+
+  document.body.appendChild(el);
+
+  setTimeout(() => {
+    el.remove();
+  }, 8000);
+}
+
+setInterval(createFloating, 300);
+</script>
 
 </body>
 </html>
