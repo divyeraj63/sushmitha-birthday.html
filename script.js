@@ -267,10 +267,8 @@ Love You Mummy ❤️
 
 </p>
 
-<button onclick="location.reload()">
-
+<button onclick="showFinalPage()">
 ❤️ Back
-
 </button>
 
 </div>
@@ -317,10 +315,8 @@ Divyeraj ❤️
 
 </p>
 
-<button onclick="location.reload()">
-
+<button onclick="showFinalPage()">
 ❤️ Back
-
 </button>
 
 </div>
