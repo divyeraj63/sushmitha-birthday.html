@@ -383,7 +383,77 @@ Divyeraj ❤️
 
 `;
 
-setTimeout(showCredits,30000);
+setTimeout(showMemoryBook,30000);
+
+}
+
+function showMemoryBook(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+">
+
+<h1>📖 Memory Book 📖</h1>
+
+<p style="font-size:24px;">
+Flip through some special memories ❤️
+</p>
+
+<button onclick="openBookPage1()">
+📖 Open Memory Book
+</button>
+</div>
+
+`;
+
+}
+
+function openBookPage1(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+">
+
+<h1>📖 Memory Book - Page 1</h1>
+
+<img src="IMG-20240512-WA0039.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+One of my favorite memories ❤️
+</p>
+
+<button onclick="showCredits()">
+➡ Next Page
+</button>
+
+</div>
+
+`;
 
 }
 
