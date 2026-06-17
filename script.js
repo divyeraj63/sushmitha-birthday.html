@@ -447,7 +447,7 @@ border-radius:15px;
 One of my favorite memories ❤️
 </p>
 
-<button onclick="showCredits()">
+<button onclick="openBookPage2()">
 ➡ Next Page
 </button>
 
@@ -456,7 +456,93 @@ One of my favorite memories ❤️
 `;
 
 }
+function openBookPage2(){
 
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+">
+
+<h1>📖 Memory Book - Page 2</h1>
+
+<img src="IMG-20240512-WA0046.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Thank you for always supporting me ❤️
+</p>
+
+<button onclick="openBookPage1()">
+⬅ Previous Page
+</button>
+
+<br><br>
+
+<button onclick="openBookPage3()">
+➡ Next Page
+</button>
+</div>
+
+`;
+
+}
+function openBookPage3(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+">
+
+<h1>📖 Memory Book - Page 3</h1>
+
+<img src="IMG-20240623-WA0000.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Your smile brightens every day ❤️
+</p>
+
+<button onclick="openBookPage2()">
+⬅ Previous Page
+</button>
+
+<br><br>
+
+<button onclick="showCredits()">
+📖 Close Memory Book
+</button>
+
+</div>
+
+`;
+
+}
 function showCredits(){
 
 document.body.innerHTML = `
