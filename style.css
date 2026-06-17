@@ -176,6 +176,36 @@ opacity:0;
 }
 }
 
+#login{
+background:rgba(0,0,0,0.75);
+backdrop-filter:blur(10px);
+}
+
+#login h1{
+text-shadow:0 0 20px #ffb6c1;
+}
+
+input{
+padding:15px;
+border:2px solid white;
+border-radius:12px;
+font-size:18px;
+background:white;
+color:black;
+width:250px;
+text-align:center;
+box-shadow:0 0 20px rgba(255,255,255,0.8);
+}
+
+button{
+box-shadow:0 0 15px rgba(255,255,255,0.4);
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
 @keyframes credits{
 from{
 transform:translateY(100%);
