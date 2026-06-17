@@ -5,188 +5,154 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Mummy ❤️</title>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+<link rel="stylesheet" href="style.css">
 
-body{
-background:black;
-overflow:hidden;
-color:white;
-}
-
-/* INTRO */
-#intro{
-position:fixed;
-width:100%;
-height:100vh;
-background:black;
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:10;
-}
-
-#intro h1{
-color:#ff4d6d;
-font-size:28px;
-animation: blink 2s infinite;
-}
-
-@keyframes blink{
-0%,100%{opacity:0.3}
-50%{opacity:1}
-}
-
-/* SLIDES */
-.slide{
-position:absolute;
-width:100%;
-height:100vh;
-object-fit:cover;
-opacity:0;
-transition:1s;
-}
-
-.active{opacity:1;}
-
-/* TEXT */
-#textBox{
-position:absolute;
-bottom:80px;
-width:100%;
-text-align:center;
-font-size:20px;
-padding:20px;
-}
-
-/* FLOAT */
-.heart,.flower,.spark{
-position:fixed;
-bottom:-20px;
-animation: floatUp linear infinite;
-opacity:0.7;
-}
-
-@keyframes floatUp{
-0%{transform:translateY(0);opacity:0}
-50%{opacity:1}
-100%{transform:translateY(-110vh);opacity:0}
-}
-
-/* FINAL */
-#final{
-position:fixed;
-width:100%;
-height:100vh;
-background:rgba(0,0,0,0.9);
-display:none;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
-z-index:20;
-}
-
-#final h1{
-color:#ff4d6d;
-font-size:34px;
-}
-audio{
-position:fixed;
-bottom:10px;
-width:90%;
-left:5%;
-}
-</style>
 </head>
 
 <body>
 
-<!-- INTRO -->
-<div id="intro">
-<h1>For My Beautiful Mummy ❤️ Sushmitha</h1>
+<div id="loader">
+<h1>Loading Memories ❤️</h1>
 </div>
 
-<!-- SLIDESHOW -->
-<img class="slide active" src="IMG-20240512-WA0039.jpg">
-<img class="slide" src="IMG-20240512-WA0046.jpg">
-<img class="slide" src="IMG-20240623-WA0000.jpg">
-<img class="slide" src="IMG-20250224-WA0033.jpg">
-<img class="slide" src="IMG-20250401-WA0007.jpg">
-<img class="slide" src="IMG-20251127-WA0004.jpg">
-<img class="slide" src="IMG_20190909_183422_Bokeh.jpg">
-<img class="slide" src="IMG_20191130_161908.jpg">
-<img class="slide" src="IMG_20200928_163255.jpg">
-<img class="slide" src="IMG_20201025_143549.jpg">
-<img class="slide" src="IMG_20220210_160235.jpg">
+<div id="progress"></div>
 
-<!-- TEXT -->
-<div id="textBox"></div>
+<div class="stars"></div>
 
-<!-- FINAL SCREEN -->
-<div id="final">
-<h1>Happy Birthday Sushmitha ❤️</h1>
-<p>You are the heart of our family 💖</p>
+<!-- LOGIN PAGE -->
+
+<div class="page active" id="login">
+
+<h1>🌸 Happy Birthday Mummy 🌸</h1>
+
+<p>Enter the Secret Password</p>
+
+<input id="password" type="password">
+
+<br><br>
+
+<button onclick="checkPass()">
+🎂 Start Birthday Journey
+</button>
+
+<br><br>
+
+<button onclick="appreciate()">
+🌹 Why You're Special
+</button>
+
 </div>
 
-<!-- SONG -->
-<audio id="song" controls loop>
+<!-- SLIDE 1 -->
+
+<div class="page" id="slide1">
+
+<h1 id="typing"></h1>
+
+<p>
+Happy Birthday Mummy ❤️
+
+Today is all about celebrating
+the most loving and caring person
+in my life.
+</p>
+
+</div>
+
+<!-- SLIDE 2 -->
+
+<div class="page" id="slide2">
+<img src="IMG-20240512-WA0039.jpg">
+<p>A beautiful memory ❤️</p>
+</div>
+
+<!-- SLIDE 3 -->
+
+<div class="page" id="slide3">
+<img src="IMG-20240512-WA0046.jpg">
+<p>Thank you for always supporting me 🌸</p>
+</div>
+
+<!-- SLIDE 4 -->
+
+<div class="page" id="slide4">
+<img src="IMG-20240623-WA0000.jpg">
+<p>Your smile brightens every day ❤️</p>
+</div>
+
+<!-- SLIDE 5 -->
+
+<div class="page" id="slide5">
+<img src="IMG-20250224-WA0033.jpg">
+<p>You taught me kindness and strength 🌹</p>
+</div>
+
+<!-- SLIDE 6 -->
+
+<div class="page" id="slide6">
+<img src="IMG-20250401-WA0007.jpg">
+<p>Every memory with you is precious ❤️</p>
+</div>
+
+<!-- SLIDE 7 -->
+
+<div class="page" id="slide7">
+<img src="IMG-20251127-WA0004.jpg">
+<p>Thank you for every sacrifice 🌸</p>
+</div> <!-- SLIDE 8 -->
+
+<div class="page" id="slide8">
+<img src="IMG_20190909_183422_Bokeh.jpg">
+<p>Thank you for every lesson you've taught me ❤️</p>
+</div>
+
+<!-- SLIDE 9 -->
+
+<div class="page" id="slide9">
+<img src="IMG_20191130_161908.jpg">
+<p>You are my biggest inspiration 🌸</p>
+</div>
+
+<!-- SLIDE 10 -->
+
+<div class="page" id="slide10">
+<img src="IMG_20200928_163255.jpg">
+<p>Your love makes everything better ❤️</p>
+</div>
+
+<!-- SLIDE 11 -->
+
+<div class="page" id="slide11">
+<img src="IMG_20201025_143549.jpg">
+<p>Thank you for always being there 🌹</p>
+</div>
+
+<!-- SLIDE 12 -->
+
+<div class="page" id="slide12">
+<img src="IMG_20220210_160235.jpg">
+<p>
+Happy Birthday Mummy ❤️
+
+<br><br>
+
+Love,
+
+<br><br>
+
+Divyeraj ❤️
+</p>
+</div>
+
+<!-- MUSIC -->
+
+<audio id="bgmusic" loop>
 <source src="song.mp3" type="audio/mpeg">
 </audio>
 
-<script>
+<!-- JAVASCRIPT -->
 
-/* INTRO */
-setTimeout(()=>{
-document.getElementById("intro").style.display="none";
-document.getElementById("song").play();
-},3000);
-
-/* SLIDESHOW */
-let slides=document.querySelectorAll(".slide");
-let i=0;
-
-setInterval(()=>{
-slides[i].classList.remove("active");
-i=(i+1)%slides.length;
-slides[i].classList.add("active");
-},3000);
-
-/* TEXT TYPING */
-let msg="Happy Birthday Mummy ❤️ You are our strength, love, and happiness forever 💖";
-let j=0;
-
-function type(){
-if(j<msg.length){
-document.getElementById("textBox").innerHTML+=msg.charAt(j);
-j++;
-setTimeout(type,50);
-}else{
-document.getElementById("final").style.display="flex";
-}
-}
-type();
-
-/* FLOATING EFFECTS */
-function float(type,emoji){
-const el=document.createElement("div");
-el.className=type;
-el.innerHTML=emoji;
-
-el.style.left=Math.random()*100+"vw";
-el.style.animationDuration=(3+Math.random()*5)+"s";
-el.style.fontSize=(15+Math.random()*25)+"px";
-
-document.body.appendChild(el);
-
-setTimeout(()=>el.remove(),8000);
-}
-
-setInterval(()=>float("heart","❤️"),300);
-setInterval(()=>float("flower","🌸"),500);
-setInterval(()=>float("spark","✨"),400);
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
