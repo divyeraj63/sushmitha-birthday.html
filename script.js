@@ -534,13 +534,237 @@ Your smile brightens every day ❤️
 
 <br><br>
 
-<button onclick="showCredits()">
-📖 Close Memory Book
+<button onclick="openBookPage4()">
+➡ Next Page
 </button>
 
 </div>
 
 `;
+
+}
+function openBookPage4(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+"><h1>📖 Memory Book - Page 4</h1><img src="IMG-20250224-WA0033.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Thank you for always being there for me ❤️
+</p><button onclick="openBookPage3()">
+⬅ Previous Page
+</button><br><br>
+
+<button onclick="openBookPage5()">
+➡ Next Page
+</button></div>`;
+
+}
+function openBookPage5(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+"><h1>📖 Memory Book - Page 5</h1><img src="IMG-20250401-WA0007.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Every moment with you is a blessing ❤️
+</p><button onclick="openBookPage4()">
+⬅ Previous Page
+</button><br><br>
+
+<button onclick="openBookPage6()">
+➡ Next Page
+</button></div>`;
+
+}
+function openBookPage6(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+"><h1>📖 Memory Book - Page 6</h1><img src="IMG-20251127-WA0004.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+A memory I will always cherish ❤️
+</p><button onclick="openBookPage5()">
+⬅ Previous Page
+</button><br><br>
+
+<button onclick="openBookPage7()">
+➡ Next Page
+</button></div>`;
+
+}
+function openBookPage7(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+"><h1>📖 Memory Book - Page 7</h1><img src="IMG_20190909_183422_Bokeh.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Every chapter of life with you is beautiful ❤️
+</p><button onclick="openBookPage6()">
+⬅ Previous Page
+</button><br><br>
+
+<button onclick="openBookPage8()">
+➡ Next Page
+</button></div>`;
+
+}
+function openBookPage8(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+"><h1>📖 Memory Book - Page 8</h1><img src="IMG_20191130_161908.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Thank you for filling my life with love ❤️
+</p><button onclick="openBookPage7()">
+⬅ Previous Page
+</button><br><br>
+
+<button onclick="openBookPage9()">
+➡ Next Page
+</button></div>`;
+
+}
+function openBookPage9(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+"><h1>📖 Memory Book - Page 9</h1><img src="IMG_20200928_163255.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Every year with you creates beautiful memories ❤️
+</p><button onclick="openBookPage8()">
+⬅ Previous Page
+</button><br><br>
+
+<button onclick="openBookPage10()">
+➡ Next Page
+</button></div>`;
+
+}
+function openBookPage10(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+"><h1>📖 Memory Book - Page 10</h1><img src="IMG_20200928_163255.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Thank you for every happy memory ❤️
+</p><button onclick="openBookPage9()">
+⬅ Previous Page
+</button><br><br>
+
+<button onclick="showCredits()">
+📖 Finish Book
+</button></div>`;
 
 }
 function showCredits(){
