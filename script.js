@@ -749,7 +749,7 @@ align-items:center;
 flex-direction:column;
 text-align:center;
 padding:20px;
-"><h1>📖 Memory Book - Page 10</h1><img src="IMG_20200928_163255.jpg"
+"><h1>📖 Memory Book - Page 10</h1><img src="IMG_20201025_143549.jpg">
 style="
 max-width:80%;
 max-height:60vh;
@@ -762,8 +762,71 @@ Thank you for every happy memory ❤️
 ⬅ Previous Page
 </button><br><br>
 
-<button onclick="showCredits()">
-📖 Finish Book
+<button onclick="openBookPage11()">
+➡ Next Page
+</button></div>`;
+
+}
+function openBookPage11(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+"><h1>📖 Memory Book - Page 11</h1><img src="IMG_20220210_160235.jpg"
+style="
+max-width:80%;
+max-height:60vh;
+border-radius:15px;
+">
+
+<p>
+Thank you for all the beautiful memories ❤️
+</p><button onclick="openBookPage10()">
+⬅ Previous Page
+</button><br><br>
+
+<button onclick="openBookEnding()">
+📖 Finish Memory Book
+</button></div>`;
+
+}
+function openBookEnding(){
+
+document.body.innerHTML = `
+
+<div style="
+background:#f8f0e3;
+color:black;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:30px;
+"><h1>📖 End of Memory Book ❤️</h1><p style="font-size:24px;line-height:1.8;">Thank You Mummy ❤️
+
+No matter how old I become,
+
+I will always be
+
+Mummy's little boy ❤️
+
+Love,
+
+Divyeraj
+
+</p><button onclick="showCredits()">
+🎬 View Credits
 </button></div>`;
 
 }
