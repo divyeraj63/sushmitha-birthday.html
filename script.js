@@ -379,11 +379,17 @@ Divyeraj ❤️
 🎁 Birthday Gift
 </button>
 
+<br>
+
+<button onclick="showMemoryBook()">
+📖 Open Memory Book
+</button>
+
 </div>
 
 `;
 
-setTimeout(showMemoryBook,30000);
+
 
 }
 
@@ -749,7 +755,7 @@ align-items:center;
 flex-direction:column;
 text-align:center;
 padding:20px;
-"><h1>📖 Memory Book - Page 10</h1><img src="IMG_20201025_143549.jpg">
+"><h1>📖 Memory Book - Page 10</h1><img src="IMG_20201025_143549.jpg"
 style="
 max-width:80%;
 max-height:60vh;
