@@ -238,7 +238,10 @@ document.body.innerHTML = `
 
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 
