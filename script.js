@@ -1,3 +1,4 @@
+let music;
 let current = 1;
 
 window.onload = function(){
@@ -20,7 +21,7 @@ let pass = document.getElementById("password").value;
 
 if(pass === "2206"){
 
-let music = document.getElementById("bgmusic");
+music = document.getElementById("bgmusic");
 
 if(music){
 music.play();
@@ -273,7 +274,10 @@ Love You Mummy ❤️
 
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 
@@ -321,7 +325,10 @@ Divyeraj ❤️
 
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
                                     } function showFinalPage(){
 
@@ -387,7 +394,10 @@ Divyeraj ❤️
 
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 
 
@@ -420,7 +430,10 @@ Flip through some special memories ❤️
 </button>
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 
@@ -906,6 +919,9 @@ The End 🌸
 
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
