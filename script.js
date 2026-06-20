@@ -472,7 +472,10 @@ One of my favorite memories ❤️
 
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage2(){
@@ -515,7 +518,10 @@ Thank you for always supporting me ❤️
 </button>
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage3(){
@@ -559,7 +565,10 @@ Your smile brightens every day ❤️
 
 </div>
 
-`;
+`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage4(){
@@ -591,7 +600,10 @@ Thank you for always being there for me ❤️
 
 <button onclick="openBookPage5()">
 ➡ Next Page
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage5(){
@@ -623,7 +635,10 @@ Every moment with you is a blessing ❤️
 
 <button onclick="openBookPage6()">
 ➡ Next Page
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage6(){
@@ -655,7 +670,10 @@ A memory I will always cherish ❤️
 
 <button onclick="openBookPage7()">
 ➡ Next Page
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage7(){
@@ -687,7 +705,10 @@ Every chapter of life with you is beautiful ❤️
 
 <button onclick="openBookPage8()">
 ➡ Next Page
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage8(){
@@ -719,7 +740,10 @@ Thank you for filling my life with love ❤️
 
 <button onclick="openBookPage9()">
 ➡ Next Page
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage9(){
@@ -751,7 +775,10 @@ Every year with you creates beautiful memories ❤️
 
 <button onclick="openBookPage10()">
 ➡ Next Page
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage10(){
@@ -783,7 +810,10 @@ Thank you for every happy memory ❤️
 
 <button onclick="openBookPage11()">
 ➡ Next Page
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookPage11(){
@@ -815,7 +845,10 @@ Thank you for all the beautiful memories ❤️
 
 <button onclick="openBookEnding()">
 📖 Finish Memory Book
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function openBookEnding(){
@@ -846,7 +879,10 @@ Divyeraj
 
 </p><button onclick="showCredits()">
 🎬 View Credits
-</button></div>`;
+</button></div>`; if(music){
+document.body.appendChild(music);
+music.play();
+}
 
 }
 function showCredits(){
